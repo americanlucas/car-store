@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+:root {
+     --cor-fundo: hsl(0, 0%, 95%);
+     --cor-descricao: hsla(0, 0%, 100%, 0.75);
+     --cor-sedans: hsl(31, 77%, 52%);
+     --cor-suvs: hsl(184, 100%, 22%);
+     --cor-luxury: hsl(179, 100%, 13%);
+
+     --fonte-titulo: 'Big Shoulders Display', sans-serif;
+     --fonte-texto: 'Lexend Deca', sans-serif;
+}
+
+body {
+     background-color: var(--cor-fundo);
+     padding: 10% 15% 5% 15%;
+     margin: 0 8%;
+}
+
+.cartaz {
+     display: flex;
+}
+
+.cartaz__sedans {
+     background-color: var(--cor-sedans);
+     padding: 2rem;
+     border-top-left-radius: 0.5rem;
+     border-bottom-left-radius: 0.5rem;
+}
+
+.cartaz__titulo {
+     text-align: start;
+     font-family: var(--fonte-titulo);
+     font-size: 2.5rem;
+     color: var(--cor-fundo);
+     font-weight: 700;
+}
+
+.cartaz__texto {
+     text-align: start;
+     margin-top: 5%;
+     font-family: var(--fonte-texto);
+     font-weight: 400;
+     font-size: 0.8rem;
+     padding-right: 5rem;
+     margin-bottom: 30%;
+     color: var(--cor-descricao);
+}
+
+.botao__sedans {
+     text-decoration: none;
+     border-radius: 3rem;
+     background-color: var(--cor-fundo);
+     padding: 0.8rem 1.8rem;
+     color: var(--cor-sedans);
+     font-family: var(--fonte-texto);
+     font-weight: 400;
+}
+
+.cartaz__suvs {
+     background-color: var(--cor-suvs);
+     padding: 2rem;
+}
+
+.botao__suvs {
+     text-decoration: none;
+     border-radius: 3rem;
+     background-color: var(--cor-fundo);
+     padding: 0.8rem 1.8rem;
+     color: var(--cor-suvs);
+     font-family: var(--fonte-texto);
+     font-weight: 400;
+}
+
+.cartaz__luxury {
+     background-color: var(--cor-luxury);
+     padding: 2rem;
+     border-top-right-radius: 0.5rem;
+     border-bottom-right-radius: 0.5rem;
+}
+
+.botao__luxury {
+     text-decoration: none;
+     border-radius: 3rem;
+     background-color: var(--cor-fundo);
+     padding: 0.8rem 1.8rem;
+     color: var(--cor-luxury);
+     font-family: var(--fonte-texto);
+     font-weight: 400;
+}
+
+.cartaz__botao:hover {
+     color: #b70b0b;
+     text-decoration: wavy;
+     padding: 1.2rem 3rem;
+     font-size: 1rem;
+}
+
+.cartaz__botao:active {
+     background-color: #000;
+}
+
+.rodape {
+     display: flex;
+     color: var(--cor-fundo);
+     font-size: 2rem;
+     font-family: var(--fonte-texto);
+     font-weight: 700;
+     text-align: center;
+     margin: 3% 30%;
+     text-decoration: none;
+     padding-left: 2rem;
+}
+
+.rodape:hover {
+     color: #000;
+     border: 5px solid #000;
+     font-family: var(--fonte-titulo);
+     font-weight: 700;
+}
+
+@media (max-width: 1440px) {
+     .cartaz {
+          justify-content: center;
+          
+     }
+}
+
+@media (max-width: 660px) {
+     .cartaz{
+           display: grid; 
+     }
+
+     .cartaz__sedans {
+          border-top-left-radius: 0rem;
+          border-bottom-left-radius: 0rem;
+     }
+     
+     .cartaz__luxury {
+          border-top-right-radius: 0rem;
+          border-bottom-right-radius: 0rem;
+          border-top: 0.5rem;
+     }
+}
+
+@media (max-width: 1200px) {
+     .cartaz__botao {
+          padding: 0.6rem 1.5rem;
+     }
+}
